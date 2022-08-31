@@ -19,6 +19,6 @@ class HelloWorldController {
 
 	@GetMapping("/hello-world")
 	String helloWorld() {
-		return "Hello world Azure";
+		return "Hello world Azure v2";
 	}
 }
