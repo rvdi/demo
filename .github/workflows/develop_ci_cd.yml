@@ -60,4 +60,4 @@ jobs:
       - uses: azure/webapps-deploy@v2
         with:
           app-name: demo-hello-world
-          images: '${{ secrets.REGISTRY_LOGIN_SERVER }}/demo:${{ github.sha }}'
+          images: ${{ secrets.REGISTRY_LOGIN_SERVER }}/demo:${{ github.sha }}
