@@ -34,14 +34,14 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ./gradlew sonarqube -Dsonar.branch.name=${{ github.ref_name }} --info
 
-      - name: SonarQube Quality Gate check
-        id: sonarqube-quality-gate-check
-        uses: sonarsource/sonarqube-quality-gate-action@master
-        with:
-          scanMetadataReportFile: build/sonar/report-task.txt
-        timeout-minutes: 5
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+#      - name: SonarQube Quality Gate check
+#        id: sonarqube-quality-gate-check
+#        uses: sonarsource/sonarqube-quality-gate-action@master
+#        with:
+#          scanMetadataReportFile: build/sonar/report-task.txt
+#        timeout-minutes: 5
+#        env:
+#          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: 'Login via Azure CLI'
         uses: azure/login@v1
