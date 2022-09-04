@@ -6,4 +6,4 @@ WORKDIR /applications
 
 COPY build/libs/demo-*-SNAPSHOT.jar /applications/demo.jar
 
-ENTRYPOINT ["java","-jar", "demo.jar"]
+ENTRYPOINT ["java", "-jar", "demo.jar", "--port", "9000"]
