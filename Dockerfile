@@ -1,6 +1,5 @@
-FROM openjdk:17-alpine
-
-EXPOSE 9000
+FROM openjdk:17-alpine0
+EXPOSE 89
 EXPOSE 9876
 
 WORKDIR /applications
